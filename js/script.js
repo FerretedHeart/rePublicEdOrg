@@ -21,7 +21,7 @@ app.config(['$routeProvider', function ($routeProvider) {
     .when("/about", {templateUrl: "pages/about.html", controller: "PageCtrl"})
     .when("/faq", {templateUrl: "pages/faq.html", controller: "PageCtrl"})
     .when("/pricing", {templateUrl: "pages/pricing.html", controller: "PageCtrl"})
-    .when("/services", {templateUrl: "pages/services.html", controller: "PageCtrl"})
+    .when("/recentnews", {templateUrl: "pages/recentnews.html", controller: "PageCtrl"})
     .when("/contact", {templateUrl: "pages/contact.html", controller: "PageCtrl"})
     // Blog
     .when("/blog", {templateUrl: "pages/blog.html", controller: "BlogCtrl"})
