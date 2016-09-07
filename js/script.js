@@ -19,8 +19,8 @@ app.config(['$routeProvider', function ($routeProvider) {
     .when("/", {templateUrl: "pages/home.html", controller: "PageCtrl"})
     // Pages
     .when("/about", {templateUrl: "pages/about.html", controller: "PageCtrl"})
-    .when("/faq", {templateUrl: "pages/faq.html", controller: "PageCtrl"})
-    .when("/pricing", {templateUrl: "pages/pricing.html", controller: "PageCtrl"})
+    .when("/topic", {templateUrl: "pages/topic.html", controller: "PageCtrl"})
+    .when("/kidslearn", {templateUrl: "pages/kidslearn.html", controller: "PageCtrl"})
     .when("/recentnews", {templateUrl: "pages/recentnews.html", controller: "PageCtrl"})
     .when("/contact", {templateUrl: "pages/contact.html", controller: "PageCtrl"})
     // Blog
@@ -29,13 +29,6 @@ app.config(['$routeProvider', function ($routeProvider) {
     // else 404
     .otherwise("/404", {templateUrl: "pages/404.html", controller: "PageCtrl"});
 }]);
-
-/**
- * Controls the Blog
- */
-app.controller('BlogCtrl', function (/* $scope, $location, $http */) {
-  console.log("Blog Controller reporting for duty.");
-});
 
 /**
  * Controls all other Pages
