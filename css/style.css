@@ -16,8 +16,6 @@
     width: 400px;
 }
 
-.kidslearn {
-    padding-left: 100px;
-    padding-right: 100px;
-    border-bottom: 1px;
+.underline {
+    text-decoration: underline;
 }

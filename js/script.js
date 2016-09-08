@@ -21,11 +21,9 @@ app.config(['$routeProvider', function ($routeProvider) {
     .when("/about", {templateUrl: "pages/about.html", controller: "PageCtrl"})
     .when("/topic", {templateUrl: "pages/topic.html", controller: "PageCtrl"})
     .when("/kidslearn", {templateUrl: "pages/kidslearn.html", controller: "PageCtrl"})
+    .when("/blogs", {templateUrl: "pages/blogs.html", controller: "PageCtrl"})
     .when("/recentnews", {templateUrl: "pages/recentnews.html", controller: "PageCtrl"})
     .when("/contact", {templateUrl: "pages/contact.html", controller: "PageCtrl"})
-    // Blog
-    .when("/blog", {templateUrl: "pages/blog.html", controller: "BlogCtrl"})
-    .when("/blog/post", {templateUrl: "pages/blog_item.html", controller: "BlogCtrl"})
     // else 404
     .otherwise("/404", {templateUrl: "pages/404.html", controller: "PageCtrl"});
 }]);
