@@ -19,11 +19,14 @@ app.config(['$routeProvider', function ($routeProvider) {
         .when("/", {templateUrl: "pages/home.html", controller: "PageCtrl"})
     // Pages
         .when("/about", {templateUrl: "pages/about.html", controller: "PageCtrl"})
-        .when("/topic", {templateUrl: "pages/topic.html", controller: "PageCtrl"})
         .when("/kidslearn", {templateUrl: "pages/kidslearn.html", controller: "PageCtrl"})
         .when("/evaluate", {templateUrl: "pages/evaluate.html", controller: "PageCtrl"})
+        .when("/challenges", {templateUrl: "pages/challenges.html", controller: "PageCtrl"})
+        .when("/misguided", {templateUrl: "pages/misguided.html", controller: "PageCtrl"})
+        .when("/benefits", {templateUrl: "pages/benefits.html", controller: "PageCtrl"})
         .when("/articles", {templateUrl: "pages/articles.html", controller: "PageCtrl"})
         .when("/blogs", {templateUrl: "pages/blogs.html", controller: "PageCtrl"})
+        .when("/events", {templateUrl: "pages/events.html", controller: "PageCtrl"})
         .when("/recentnews", {templateUrl: "pages/recentnews.html", controller: "PageCtrl"})
         .when("/contact", {templateUrl: "pages/contact.html", controller: "PageCtrl"})
     // else 404
@@ -47,6 +50,22 @@ app.controller('PageCtrl', function () {
 
     $('.carousel-control.right').click(function () {
         $('#publicEdCarousel').carousel('next');
+    });
+    
+    $('.carousel-control.left').click(function () {
+        $('#publicEdEvent').carousel('prev');
+    });
+
+    $('.carousel-control.right').click(function () {
+        $('#publicEdEvent').carousel('next');
+    });
+    
+    $('.carousel-control.left').click(function () {
+        $('#eventFlyers').carousel('prev');
+    });
+
+    $('.carousel-control.right').click(function () {
+        $('#eventFlyers').carousel('next');
     });
 
   // Activates Tooltips for Social Links
