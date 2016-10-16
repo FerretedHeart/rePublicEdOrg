@@ -2,9 +2,9 @@
 
 // configure
 $from = 'info@republiced.org';
-$sendTo = 'jeanine.marie@me.com';
+$sendTo = 'info@republiced.org';
 $subject = 'New message from donation form';
-$fields = array('firstname' => 'First Name', 'lastname' => 'Last Name', 'newsletterOption' => 'Newsletter?', 'email' => 'Email', 'Wish Item' => 'wishitem', 'Contact' => 'contact'); // array variable name => Text to appear in email
+$fields = array('firstname' => 'First Name', 'lastname' => 'Last Name', 'newsletterOption' => 'Newsletter?', 'email' => 'Email', 'wishitem' => 'Wish Item', 'contact' => 'Contact'); // array variable name => Text to appear in email
 $okMessage = 'Donate form successfully submitted. Thank you!';
 $errorMessage = 'There was an error while submitting the form. Please try again later';
 
@@ -12,7 +12,7 @@ $errorMessage = 'There was an error while submitting the form. Please try again 
 
 try
 {
-    $emailText = "You have new message from contact form\n=============================\n";
+    $emailText = "You have new message from donate form\n=============================\n";
 
     foreach ($_POST as $key => $value) {
 

@@ -2,7 +2,7 @@
 
 // configure
 $from = 'info@republiced.org';
-$sendTo = 'jeanine.marie@me.com';
+$sendTo = 'info@republiced.org';
 $subject = 'New message from contact form';
 $fields = array('firstname' => 'First Name', 'lastname' => 'Last Name', 'newsletterOption' => 'Newsletter?', 'email' => 'Email', 'message' => 'Message'); // array variable name => Text to appear in email
 $okMessage = 'Contact form successfully submitted. Thank you!';
