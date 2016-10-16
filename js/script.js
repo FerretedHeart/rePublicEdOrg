@@ -25,10 +25,13 @@ app.config(['$routeProvider', function ($routeProvider) {
         .when("/misguided", {templateUrl: "pages/misguided.html", controller: "PageCtrl"})
         .when("/benefits", {templateUrl: "pages/benefits.html", controller: "PageCtrl"})
         .when("/articles", {templateUrl: "pages/articles.html", controller: "PageCtrl"})
+        .when("/videos", {templateUrl: "pages/videos.html", controller: "PageCtrl"})
         .when("/blogs", {templateUrl: "pages/blogs.html", controller: "PageCtrl"})
         .when("/events", {templateUrl: "pages/events.html", controller: "PageCtrl"})
         .when("/recentnews", {templateUrl: "pages/recentnews.html", controller: "PageCtrl"})
         .when("/contact", {templateUrl: "pages/contact.html", controller: "PageCtrl"})
+        .when("/donate", {templateUrl: "pages/donate.html", controller: "PageCtrl"})
+        .when("/volunteer", {templateUrl: "pages/volunteer.html", controller: "PageCtrl"})
     // else 404
         .otherwise("/404", {templateUrl: "pages/404.html", controller: "PageCtrl"});
 }]);

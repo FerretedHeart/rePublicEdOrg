@@ -1,9 +1,15 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2">
-      <h1 class="text-center">Contact Us</a></h1>
-      <p class="lead">We are looking forward to hearing from you. Please feel free to get in touch via the form below, and we will get back to you as soon as possible!</p>
-      <form id="contact-form" method="post" action="/php/contact.php" role="form">
+      <h1 class="text-center">Material Donations</a></h1>
+      <p class="lead">Wishlist</p>
+      <ul class="lead">
+          <li>Cork board</li>
+          <li>Seltzer water and non-perishable/non-sugar drinks for our guests for our events</li>
+          <li>Paper cups/paper plates (no styrofoam or plastic please)</li>
+          <li>Printer</li>
+      </ul>
+      <form id="donate-form" method="post" action="/php/donate.php" role="form">
         <div class="messages"></div>
           <div class="controls">
             <div class="row">
@@ -50,8 +56,15 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="form-group">
-                        <label for="form_message">Let us know what is happening in your part of the state.</label>
-                        <textarea id="form_message" name="message" class="form-control" placeholder="Please leave us a message" rows="4" data-error="Please leave us a message."></textarea>
+                        <label for="form_message">What from the wish list would you like to send?</label>
+                        <textarea id="form_message" name="wishitem" class="form-control" placeholder="Please list item(s)." rows="4" data-error="Please list item(s)."></textarea>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="form_message">How would you like to be contacted?</label>
+                        <textarea id="form_message" name="contact" class="form-control" placeholder="Please enter message." rows="4" data-error="Please enter message."></textarea>
                         <div class="help-block with-errors"></div>
                     </div>
                 </div>
@@ -69,4 +82,4 @@
     </div>
   </div>
 </div>
-<script src="/js/contact.js"></script>
+<script src="/js/donate.js"></script>
