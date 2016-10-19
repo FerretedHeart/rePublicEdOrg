@@ -1,7 +1,7 @@
 .home {
     margin-left: auto;
     margin-right: auto;
-    width: 800px;
+    width: 60%;
 }
 
 .right {
@@ -18,4 +18,18 @@
 
 .underline {
     text-decoration: underline;
+}
+
+.topic {
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.eval {
+    height: 10%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
