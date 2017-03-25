@@ -27,6 +27,7 @@ app.config(['$routeProvider', function ($routeProvider) {
         .when("/articles", {templateUrl: "pages/articles.html", controller: "PageCtrl"})
         .when("/videos", {templateUrl: "pages/videos.html", controller: "PageCtrl"})
         .when("/blogs", {templateUrl: "pages/blogs.html", controller: "PageCtrl"})
+        .when("/info", {templateUrl: "pages/infographics.html", controller: "PageCtrl"})
         .when("/events", {templateUrl: "pages/events.html", controller: "PageCtrl"})
         .when("/recentnews", {templateUrl: "pages/recentnews.html", controller: "PageCtrl"})
         .when("/contact", {templateUrl: "pages/contact.html", controller: "PageCtrl"})
